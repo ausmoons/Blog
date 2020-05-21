@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="AutoMapper" Version="9.0.0" />
+	  <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.5.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\BlogApp.Data\BlogApp.Data.csproj" />
+	  <ProjectReference Include="..\BlogApp.Services\BlogApp.Services.csproj" />
+	</ItemGroup>
+
+</Project>
